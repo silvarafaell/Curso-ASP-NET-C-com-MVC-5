@@ -9,9 +9,9 @@ namespace projeto.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public string Index()
+        public ActionResult Index()
         {
-            return "Francisco Rafael";
+            return View();
         }
     }
 }
