@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using projeto.Models;
 using System.Web.Mvc;
 
 namespace projeto.Controllers
@@ -11,6 +8,11 @@ namespace projeto.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            var pessoa = new Pessoa() 
+            {
+
+            }
+
             return View();
         }
 
