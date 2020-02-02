@@ -13,5 +13,11 @@ namespace projeto.Controllers
         {
             return View();
         }
+
+        public ActionResult Contatos()
+        {
+            return View();
+        }
+
     }
 }
