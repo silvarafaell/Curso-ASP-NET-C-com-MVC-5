@@ -8,10 +8,17 @@ namespace projeto.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            var pessoa = new Pessoa() 
+            var pessoa = new Pessoa
             {
+                PessoaId = 1,
+                Nome = "Francisco Rafael",
+                Tipo = "Administrador"
 
-            }
+            };
+
+            ViewData["PessoaId"] = pessoa.PessoaId;
+            ViewData["Nome"] = pessoa.Nome;
+            ViewData["Tipo"] = pessoa.Tipo;
 
             return View();
         }
