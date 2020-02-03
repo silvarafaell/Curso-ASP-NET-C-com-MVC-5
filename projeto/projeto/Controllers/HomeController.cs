@@ -16,11 +16,7 @@ namespace projeto.Controllers
 
             };
 
-            ViewBag.Id = pessoa.PessoaId;
-            ViewBag.Nome = pessoa.Nome;
-            ViewBag.tipo = pessoa.Tipo;
-
-            return View();
+            return View(pessoa);
         }
 
         public ActionResult Contatos()
