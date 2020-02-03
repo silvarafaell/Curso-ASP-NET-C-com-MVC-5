@@ -24,5 +24,11 @@ namespace projeto.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Lista()
+        {
+            return View();
+        }
+
     }
 }
