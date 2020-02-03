@@ -16,9 +16,9 @@ namespace projeto.Controllers
 
             };
 
-            ViewData["PessoaId"] = pessoa.PessoaId;
-            ViewData["Nome"] = pessoa.Nome;
-            ViewData["Tipo"] = pessoa.Tipo;
+            ViewBag.Id = pessoa.PessoaId;
+            ViewBag.Nome = pessoa.Nome;
+            ViewBag.tipo = pessoa.Tipo;
 
             return View();
         }
