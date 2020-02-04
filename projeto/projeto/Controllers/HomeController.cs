@@ -25,11 +25,11 @@ namespace projeto.Controllers
         }
 
         [HttpPost]
-        public ActionResult Lista(int PessoaId, string Nome, string Tipo)
+        public ActionResult Lista(Pessoa pessoa)
         {
-            ViewData["PessoaId"] = PessoaId;
-            ViewData["Nome"] = Nome;
-            ViewData["Tipo"] = Tipo;
+            ViewData["PessoaId"] = pessoa.PessoaId;
+            ViewData["Nome"] = pessoa.Nome;
+            ViewData["Tipo"] = pessoa.Tipo;
             return View();
         }
 
