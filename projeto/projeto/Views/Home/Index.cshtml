@@ -12,7 +12,7 @@
 
 <p>View Tipada</p>
 
-<form action="Home/Lista" method="POST"<
+<form action="Home/Lista" method="GET"<
     <fieldset>
         <legend>Informações de Pessoas</legend>
 
@@ -21,22 +21,21 @@
             <label for="PessoaId">Código</label>
         </div>
         <div>
-            <input type="number" value="@Model.PessoaId" name="PessoaId" />
+            <input type="number" value="@Model.PessoaId" Name="PessoaId" />
         </div>
-
 
         <div>
             <label for="Nome">Nome</label>
         </div>
         <div>
-            <input type="text" value="@Model.Nome" name="Nome" />
+            <input type="text" value="@Model.Nome" Name="Nome" />
         </div>
 
         <div>
             <label for="Tipo">Tipo</label>
         </div>
         <div>
-            <input type="text" value="@Model.Tipo" name="Tipo" />
+            <input type="text" value="@Model.Tipo" Name="Tipo" />
         </div>
 
         <p><input type="submit" value="Enviar" /></p>
