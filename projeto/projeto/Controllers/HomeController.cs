@@ -24,7 +24,7 @@ namespace projeto.Controllers
             return View();
         }
 
-        //[HttpPost]
+        [HttpPost]
         public ActionResult Lista(int PessoaId, string Nome, string Tipo)
         {
             ViewData["PessoaId"] = PessoaId;
