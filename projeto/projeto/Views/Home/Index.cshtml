@@ -1,4 +1,4 @@
-﻿projeto.Models.Pessoa
+﻿@model projeto.Models.Pessoa
 
 @{
     ViewBag.Title = "Index";
@@ -12,33 +12,34 @@
 
 <p>View Tipada</p>
 
-<form action="Home/Lista" method="POST"<
+@using (Html.BeginForm("Lista", "Home", FormMethod.Post))
+{
     <fieldset>
         <legend>Informações de Pessoas</legend>
 
 
         <div>
-            <label for="PessoaId">Código</label>
+            @Html.LabelFor(x=>x.PessoaId)
         </div>
         <div>
-            <input type="number" value="@Model.PessoaId" Name="PessoaId" />
-        </div>
-
-        <div>
-            <label for="Nome">Nome</label>
-        </div>
-        <div>
-            <input type="text" value="@Model.Nome" Name="Nome" />
+           @Html.EditorFor(x=>x.PessoaId)
         </div>
 
         <div>
-            <label for="Tipo">Tipo</label>
+            @Html.LabelFor(x => x.Nome)
         </div>
         <div>
-            <input type="text" value="@Model.Tipo" Name="Tipo" />
+            @Html.EditorFor(x => x.Nome)
+        </div>
+
+        <div>
+            @Html.LabelFor(x => x.Tipo)
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Tipo)
         </div>
 
         <p><input type="submit" value="Enviar" /></p>
 
-
     </fieldset>
+}
