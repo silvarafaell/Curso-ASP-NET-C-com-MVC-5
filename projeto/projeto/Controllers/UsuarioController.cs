@@ -1,4 +1,5 @@
-﻿using System;
+﻿using projeto.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,26 @@ namespace projeto.Controllers
 {
     public class UsuarioController : Controller
     {
-        // GET: Usuario
+        
         public ActionResult Index()
         {
-            return View();
+            var usuario = new Usuario();
+            return View(usuario);
+        }
+
+        [HttpPost]
+        public ActionResult Index(Usuario usuario)
+        {
+            if(ModelState.IsValid)
+            {
+                return View("resultado", usuario);
+            }
+            return View(usuario);
+        }
+
+        public ActionResult Resultado(Usuario usuario)
+        {
+            return View(usuario);
         }
     }
 }
