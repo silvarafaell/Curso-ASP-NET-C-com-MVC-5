@@ -17,8 +17,11 @@ namespace projeto.Models
         [RegularExpression(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$", ErrorMessage = "Digite um Email Valido")]
         public string Email { get; set; }
         [RegularExpression(@"[a-zA-Z]{5,15}", ErrorMessage = "Somente Letras de 5 a 15 caracteres!")]
+        [Required(ErrorMessage = "O Login é Obrigatorio")]
         public string Login { get; set; }
+        [Required(ErrorMessage = "A Senha é Obrigatoria")]
         public string Senha { get; set; }
+        [Compare("Senha", ErrorMessage = "As Senhas não são iguais!")]
         public string ConfirmarSenha { get; set; }
         
     }
