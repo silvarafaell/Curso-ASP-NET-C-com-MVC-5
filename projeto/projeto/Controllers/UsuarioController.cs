@@ -19,15 +19,8 @@ namespace projeto.Controllers
         [HttpPost]
         public ActionResult Usuario(Usuario usuario)
         {
-            if(string.IsNullOrEmpty(usuario.Nome))
-            {
-                ModelState.AddModelError("Nome", "O campo nome é obrigatorio");
-            }
+           
 
-            if(usuario.Senha != usuario.ConfirmarSenha)
-            {
-                ModelState.AddModelError("", "As Senhas são Diferentes");
-            }
 
             if(ModelState.IsValid)
             {
