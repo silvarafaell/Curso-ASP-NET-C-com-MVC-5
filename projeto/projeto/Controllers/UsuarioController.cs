@@ -24,6 +24,11 @@ namespace projeto.Controllers
                 ModelState.AddModelError("Nome", "O campo nome é obrigatorio");
             }
 
+            if(usuario.Senha != usuario.ConfirmarSenha)
+            {
+                ModelState.AddModelError("", "As Senhas são Diferentes");
+            }
+
             if(ModelState.IsValid)
             {
                 return View("resultado", usuario);
