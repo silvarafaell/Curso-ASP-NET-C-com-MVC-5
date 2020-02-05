@@ -10,7 +10,7 @@ namespace projeto.Controllers
     public class UsuarioController : Controller
     {
         
-        public ActionResult Index()
+        public ActionResult Usuario()
         {
             var usuario = new Usuario();
             return View(usuario);
