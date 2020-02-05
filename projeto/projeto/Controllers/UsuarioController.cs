@@ -17,7 +17,7 @@ namespace projeto.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(Usuario usuario)
+        public ActionResult Usuario(Usuario usuario)
         {
             if(ModelState.IsValid)
             {

@@ -1,7 +1,19 @@
-﻿
+﻿@model projeto.Models.Usuario
+
 @{
-    ViewBag.Title = "Resultado";
+    ViewBag.Title = "Resultado Usuários";
 }
 
-<h2>Resultado</h2>
+<h2>Listar Dados Usuários</h2>
+
+
+<legend>Usuario Cadastrado</legend>
+
+<div class="editor-label">
+    @Html.DisplayNameFor(model => model.Nome)
+</div>
+<div class="editor-field">
+    @Html.DisplayFor(model => model.Nome)
+    
+</div>
 
