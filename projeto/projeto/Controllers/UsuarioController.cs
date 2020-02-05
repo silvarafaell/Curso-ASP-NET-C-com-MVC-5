@@ -19,6 +19,11 @@ namespace projeto.Controllers
         [HttpPost]
         public ActionResult Usuario(Usuario usuario)
         {
+            if(string.IsNullOrEmpty(usuario.Nome))
+            {
+                ModelState.AddModelError("Nome", "O campo nome é obrigatorio");
+            }
+
             if(ModelState.IsValid)
             {
                 return View("resultado", usuario);
