@@ -1,6 +1,7 @@
 ﻿using projeto.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -36,12 +37,14 @@ namespace projeto.Controllers
 
         public ActionResult LoginUnico(string login)
         {
-            var bdExemplo = new Colletion<string>
+            var bdExemplo = new Collection<string>
             {
                 "Francisco",
                 "Rafael",
                 "Pereira"
             };
+
+            return Json(bdExemplo.All(x => x.ToLower() != login.ToLower()), JsonRequestBehavior.AllowGet);
         }
     }
 }
