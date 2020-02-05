@@ -33,5 +33,15 @@ namespace projeto.Controllers
         {
             return View(usuario);
         }
+
+        public ActionResult LoginUnico(string login)
+        {
+            var bdExemplo = new Colletion<string>
+            {
+                "Francisco",
+                "Rafael",
+                "Pereira"
+            };
+        }
     }
 }
