@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rotas.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,12 @@ namespace Rotas.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IEnumerable<Noticia> todasAsNoticias;
+
+        public HomeController()
+        {
+
+        }
         public ActionResult Index()
         {
             return View();
