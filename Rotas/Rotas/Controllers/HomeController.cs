@@ -24,6 +24,16 @@ namespace Rotas.Controllers
 
             return View(ultimasNoticias);
         }
+
+        public ActionResult TodasAsNoticias()
+        {
+            return View(todasAsNoticias);
+        }
+
+        public ActionResult MostraNoticia(int noticiaId, string titulo, string categoria)
+        {
+            return View(todasAsNoticias.FirstOrDefault(x => x.NoticiaId == noticiaId));
+        }
        
     }
 }
