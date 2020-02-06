@@ -12,7 +12,7 @@
         @foreach (var item in Model)
         {
             <li>
-                @Html.ActionLink(item.Titulo, "MostrarNoticia", "Home", new
+                @Html.ActionLink(item.Titulo, "MostraNoticia", "Home", new
                 {
                     @noticiaId = item.NoticiaId,
                 @categoria = item.Categoria.ToLower(),

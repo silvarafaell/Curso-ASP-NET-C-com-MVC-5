@@ -37,7 +37,9 @@ namespace Rotas.Controllers
 
         public ActionResult MostraCategoria(string categoria)
         {
-
+            var CategoriaEspecifica = todasAsNoticias.Where(x=>x.Categoria.ToLower()==categoria.ToLower()).ToList();
+            ViewBag.Categoria = categoria;
+            return View(CategoriaEspecifica);
         }
        
     }
