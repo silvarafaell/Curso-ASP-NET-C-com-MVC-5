@@ -13,11 +13,16 @@ namespace Rotas.Controllers
 
         public HomeController()
         {
-
+            todasAsNoticias = new Noticia().TodasAsNoticias().OrderByDescending(x => x.Data);
         }
         public ActionResult Index()
         {
-            return View();
+            var ultimasNoticias = todasAsNoticias.Take(3);
+            var todasAsCategorias = todasAsNoticias.Select(x => x.Categoria).Distinct().ToList();
+
+            ViewBag.Categoria = todasAsCategorias;
+
+            return View(ultimasNoticias);
         }
 
         public ActionResult About()
