@@ -34,6 +34,11 @@ namespace Rotas.Controllers
         {
             return View(todasAsNoticias.FirstOrDefault(x => x.NoticiaId == noticiaId));
         }
+
+        public ActionResult MostraCategoria(string categoria)
+        {
+
+        }
        
     }
 }
