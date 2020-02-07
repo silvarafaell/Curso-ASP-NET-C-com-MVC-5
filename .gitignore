@@ -48,11 +48,6 @@ Generated\ Files/
 TestResult.xml
 nunit-*.xml
 
-# Build Results of an ATL Project
-[Dd]ebugPS/
-[Rr]eleasePS/
-dlldata.c
-
 # Benchmark Results
 BenchmarkDotNet.Artifacts/
 
@@ -294,10 +289,6 @@ node_modules/
 **/*.Server/GeneratedArtifacts
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
-
-# Paket dependency manager
-.paket/paket.exe
-paket-files/
 
 # FAKE - F# Make
 .fake/
