@@ -12,6 +12,12 @@ namespace Bundle
 
             bundles.Add(new ScriptBundle("~/comum").IncludeDirectory("~/Scripts/comum", "*.js", true));
 
+            var ordem = new BundleFileSetOrdering("meuScript");
+            ordem.Files.Add("~/comum/setup.js");
+            ordem.Files.Add("~/comum/display.js");
+
+
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js")); //inclusao de um unico arquivo
 
