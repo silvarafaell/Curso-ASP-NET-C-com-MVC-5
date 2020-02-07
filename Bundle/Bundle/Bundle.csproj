@@ -138,7 +138,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Scripts\comum\debug\debug.js" />
+    <Content Include="Scripts\comum\debug\setup.dbg.js" />
     <Content Include="Scripts\comum\display.js" />
     <Content Include="Scripts\comum\exemplo.js" />
     <Content Include="Scripts\comum\setup.js" />
