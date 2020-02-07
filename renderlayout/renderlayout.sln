@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "renderlayout", "renderlayout\renderlayout.csproj", "{F7885640-C7C9-4808-9D6C-1548A755A361}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7885640-C7C9-4808-9D6C-1548A755A361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7885640-C7C9-4808-9D6C-1548A755A361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7885640-C7C9-4808-9D6C-1548A755A361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7885640-C7C9-4808-9D6C-1548A755A361}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60B3A065-DF8F-43BE-A759-64BDC969F06B}
+	EndGlobalSection
+EndGlobal
