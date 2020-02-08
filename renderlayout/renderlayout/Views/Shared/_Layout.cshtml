@@ -8,19 +8,23 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @RenderPage("~/Views/Shared/_Topo.cshtml");
+    <div class="container">
 
-     <div class="container body-content">
-        @RenderBody()
-        <hr />
-         @if (IsSectionDefined("Rodape"))
-         {
+        @RenderPage("~/Views/Shared/_Topo.cshtml");
 
-         }
-         else
-         {
-        @Html.Partial("_Rodape")
-         }
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            @if (IsSectionDefined("Rodape"))
+            {
+                @RenderSection("Rodape")
+            }
+            else
+            {
+                @Html.Partial("_Rodape")
+            }
+        </div>
+
     </div>
 
     @Scripts.Render("~/bundles/jquery")
